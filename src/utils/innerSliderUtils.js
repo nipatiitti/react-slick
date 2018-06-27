@@ -99,8 +99,8 @@ export const extractObject = (spec, keys) => {
 export const initializedState = spec => {
   // spec also contains listRef, trackRef
   let slideCount = React.Children.count(spec.children);
-  let listWidth = Math.ceil(getWidth(ReactDOM.findDOMNode(spec.listRef)));
-  let trackWidth = Math.ceil(getWidth(ReactDOM.findDOMNode(spec.trackRef)));
+  let listWidth = spec.listWidth || Math.ceil(getWidth(ReactDOM.findDOMNode(spec.listRef)));
+  let trackWidth = spec.trackWidth || Math.ceil(getWidth(ReactDOM.findDOMNode(spec.trackRef)));
   let slideWidth;
   if (!spec.vertical) {
     let centerPaddingAdj = spec.centerMode && parseInt(spec.centerPadding) * 2;
