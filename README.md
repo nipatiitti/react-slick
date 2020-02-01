@@ -1,3 +1,5 @@
+This branch is for use as a prebuild npm package. It also forks not the original project but a another fork that has some performance updates.
+
 ### react-slick
 
 [![Backers on Open Collective](https://opencollective.com/react-slick/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/react-slick/sponsors/badge.svg)](#sponsors) [![Join the chat at https://gitter.im/akiran/react-slick](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/akiran/react-slick?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -31,8 +33,17 @@ npm install slick-carousel
 or add cdn link in your html
 
 ```html
-<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+<link
+    rel="stylesheet"
+    type="text/css"
+    charset="UTF-8"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+/>
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+/>
 ```
 
 ### [PlayGround](https://codesandbox.io/s/ppwkk5l6xx)
@@ -40,41 +51,41 @@ or add cdn link in your html
 ### Example
 
 ```js
-import React from "react";
-import Slider from "react-slick";
+import React from "react"
+import Slider from "react-slick"
 
 class SimpleSlider extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-    );
-  }
+    render() {
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+        return (
+            <Slider {...settings}>
+                <div>
+                    <h3>1</h3>
+                </div>
+                <div>
+                    <h3>2</h3>
+                </div>
+                <div>
+                    <h3>3</h3>
+                </div>
+                <div>
+                    <h3>4</h3>
+                </div>
+                <div>
+                    <h3>5</h3>
+                </div>
+                <div>
+                    <h3>6</h3>
+                </div>
+            </Slider>
+        )
+    }
 }
 ```
 
